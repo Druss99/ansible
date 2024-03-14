@@ -13,6 +13,8 @@ pi-holes:
       server_hostname: k3s-master-2
     192.168.50.14:
       server_hostname: k3s-slave-2
+    192.168.50.15:
+      server_hostname: k3s-slave-3
 
 docker:
   hosts:
