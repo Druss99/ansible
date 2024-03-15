@@ -8,9 +8,9 @@ pi-holes:
     192.168.50.11:
       server_hostname: k3s-master-1
     192.168.50.12:
-      server_hostname: k3s-slave-1
-    192.168.50.13:
       server_hostname: k3s-master-2
+    192.168.50.13:
+      server_hostname: k3s-slave-1
     192.168.50.14:
       server_hostname: k3s-slave-2
     192.168.50.15:
