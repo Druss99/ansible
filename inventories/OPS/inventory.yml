@@ -17,6 +17,10 @@ pi-holes:
       server_hostname: k3s-slave-3
     192.168.50.16:
       server_hostname: k3s-slave-4
+    192.168.50.17:
+      server_hostname: longhorn-1
+    192.168.50.18:
+      server_hostname: longhorn-2
 
 docker:
   hosts:
