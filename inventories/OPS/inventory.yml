@@ -1,17 +1,8 @@
 ---
-pi-holes:
-  hosts:
-    192.168.50.151:
-      server_hostname: pi-hole-1
-    192.168.50.152:
-      server_hostname: pi-hole-2
-
 docker:
   hosts:
     192.168.50.3:
       server_hostname: mediaserver
-    192.168.50.4:
-      server_hostname: portainer2
 
 kubernetes:
   hosts:
@@ -29,11 +20,8 @@ kubernetes:
       server_hostname: k3s-worker-3
     192.168.50.17:
       server_hostname: k3s-worker-4
-    192.168.50.20:
-      server_hostname: minikube
 
 ops_servers:
   children:
-    pi-holes:
     docker:
     kubernetes:
