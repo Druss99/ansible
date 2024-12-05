@@ -35,6 +35,12 @@
           8gYfc9H0EtO9JFY11Xhyj8SUlnP dalton.w.russell@gmail.com"
     state: present
 
+- name: Add ssh key for wsl
+  ansible.posix.authorized_key:
+    user: drussell
+    key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINDAOEYLrssJXy+QUpA7xGNDnKETrzF+mJNFtyNs2at8 drussell@russell-windows"
+    state: present
+
 - name: Add sudoers file for ansible
   ansible.builtin.copy:
     src: ./files/sudoer_ansible
