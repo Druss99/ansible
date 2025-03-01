@@ -41,6 +41,12 @@
     key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINDAOEYLrssJXy+QUpA7xGNDnKETrzF+mJNFtyNs2at8 drussell@russell-windows"
     state: present
 
+- name: Add ssh key for admin
+  ansible.posix.authorized_key:
+    user: drussell
+    key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOYFLsJ2toApC4ewpvBUfDIF/fV3lF6/I3o4j8m7sxTw drussell@russell-admin-vm"
+    state: present
+
 - name: Add sudoers file for ansible
   ansible.builtin.copy:
     src: ./files/sudoer_ansible
